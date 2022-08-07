@@ -9,10 +9,12 @@ import abc
 import numpy
 import operatorflow.core.graph as graph
 
+
 class Node:
     """
     base class of computational graph node.
     """
+
     def __init__(self, *parents, **kargs):
         self.kargs = kargs
         self.graph = kargs.get('graph', graph.default_graph)

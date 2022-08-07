@@ -5,10 +5,12 @@ Created on 19:41, 2022/8/7
 @author: liuyuanle
 """
 
+
 class Graph:
     """
     计算图类
     """
+
     def __init__(self):
         self.nodes = []
 
@@ -43,6 +45,7 @@ class Graph:
         :return: none
         """
         return len(self.nodes)
+
 
 # global default computational graph
 default_graph = Graph()
